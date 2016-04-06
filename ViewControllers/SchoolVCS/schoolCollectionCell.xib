@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="schoolCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学校介绍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6Z-Ov-sli">
+                        <rect key="frame" x="10" y="61" width="55" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Wpp-mE-cS3"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fj4-yg-8Lz">
+                        <rect key="frame" x="10" y="5" width="55" height="55"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gRk-jL-8wv">
+                        <rect key="frame" x="79" y="0.0" width="1" height="80"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aT4-J3-qcP">
+                        <rect key="frame" x="0.0" y="79" width="80" height="1"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="frJ-PL-UsC"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="g6Z-Ov-sli" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="024-de-ceu"/>
+                <constraint firstItem="g6Z-Ov-sli" firstAttribute="centerX" secondItem="aT4-J3-qcP" secondAttribute="centerX" constant="-2.5" id="0kl-6V-57L"/>
+                <constraint firstItem="aT4-J3-qcP" firstAttribute="bottom" secondItem="gRk-jL-8wv" secondAttribute="bottom" id="7gp-5g-sNb"/>
+                <constraint firstAttribute="trailing" secondItem="aT4-J3-qcP" secondAttribute="trailing" id="CDP-FB-XWO"/>
+                <constraint firstItem="aT4-J3-qcP" firstAttribute="top" secondItem="g6Z-Ov-sli" secondAttribute="bottom" constant="3" id="JKl-rc-BOq"/>
+                <constraint firstItem="g6Z-Ov-sli" firstAttribute="trailing" secondItem="Fj4-yg-8Lz" secondAttribute="trailing" id="QM6-8O-XaS"/>
+                <constraint firstAttribute="bottom" secondItem="aT4-J3-qcP" secondAttribute="bottom" id="RPf-uP-0ze"/>
+                <constraint firstItem="Fj4-yg-8Lz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="c3M-GQ-cTi"/>
+                <constraint firstItem="gRk-jL-8wv" firstAttribute="leading" secondItem="Fj4-yg-8Lz" secondAttribute="trailing" constant="14" id="fmV-DH-V7K"/>
+                <constraint firstItem="aT4-J3-qcP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gau-BT-dnM"/>
+                <constraint firstItem="g6Z-Ov-sli" firstAttribute="top" secondItem="Fj4-yg-8Lz" secondAttribute="bottom" constant="1" id="hNz-NT-BHQ"/>
+                <constraint firstItem="gRk-jL-8wv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="i2R-OB-Ysp"/>
+                <constraint firstItem="Fj4-yg-8Lz" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="tiq-VX-X7Y"/>
+                <constraint firstItem="gRk-jL-8wv" firstAttribute="trailing" secondItem="aT4-J3-qcP" secondAttribute="trailing" id="wlb-eb-pfE"/>
+            </constraints>
+            <size key="customSize" width="73" height="76"/>
+            <connections>
+                <outlet property="rightLine" destination="gRk-jL-8wv" id="Dr7-NT-TQ5"/>
+                <outlet property="schoolDetail" destination="g6Z-Ov-sli" id="xfs-eA-80n"/>
+                <outlet property="schoolImageView" destination="Fj4-yg-8Lz" id="t7S-eY-fyQ"/>
+            </connections>
+            <point key="canvasLocation" x="393" y="482"/>
+        </collectionViewCell>
+    </objects>
+</document>

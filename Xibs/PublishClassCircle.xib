@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PublishClassCircle">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="eEu-Dy-ORb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqh-bt-d9J">
+                    <rect key="frame" x="8" y="26" width="304" height="222"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bluekuang.png" translatesAutoresizingMaskIntoConstraints="NO" id="abR-3p-zai">
+                            <rect key="frame" x="0.0" y="0.0" width="304" height="185"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击说点什么吧。。。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6m4-MR-Bc2">
+                            <rect key="frame" x="8" y="18" width="288" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="3lM-od-8AG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Jy8-fO-mXT">
+                            <rect key="frame" x="8" y="13" width="288" height="172"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="6m4-MR-Bc2" firstAttribute="centerX" secondItem="abR-3p-zai" secondAttribute="centerX" id="9xW-v1-eY3"/>
+                        <constraint firstItem="6m4-MR-Bc2" firstAttribute="top" secondItem="tqh-bt-d9J" secondAttribute="top" constant="18" id="Cfb-hR-RCf"/>
+                        <constraint firstItem="Jy8-fO-mXT" firstAttribute="top" secondItem="tqh-bt-d9J" secondAttribute="top" constant="13" id="Eio-zI-bxK"/>
+                        <constraint firstItem="abR-3p-zai" firstAttribute="bottom" secondItem="Jy8-fO-mXT" secondAttribute="bottom" id="UiV-kZ-l54"/>
+                        <constraint firstAttribute="trailing" secondItem="abR-3p-zai" secondAttribute="trailing" id="WsN-lT-0eA"/>
+                        <constraint firstItem="6m4-MR-Bc2" firstAttribute="leading" secondItem="Jy8-fO-mXT" secondAttribute="leading" id="a4h-L4-YMa"/>
+                        <constraint firstItem="abR-3p-zai" firstAttribute="leading" secondItem="tqh-bt-d9J" secondAttribute="leading" id="dQw-xA-uKb"/>
+                        <constraint firstItem="abR-3p-zai" firstAttribute="top" secondItem="tqh-bt-d9J" secondAttribute="top" id="g9D-zB-2vk"/>
+                        <constraint firstItem="6m4-MR-Bc2" firstAttribute="trailing" secondItem="Jy8-fO-mXT" secondAttribute="trailing" id="oiA-Zt-Upv"/>
+                        <constraint firstAttribute="bottom" secondItem="abR-3p-zai" secondAttribute="bottom" constant="37" id="rWf-52-89w"/>
+                        <constraint firstItem="Jy8-fO-mXT" firstAttribute="leading" secondItem="tqh-bt-d9J" secondAttribute="leadingMargin" id="vx1-kd-VyD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tqh-bt-d9J" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leadingMargin" id="0Na-5Z-w6k"/>
+                <constraint firstItem="tqh-bt-d9J" firstAttribute="trailing" secondItem="iN0-l3-epB" secondAttribute="trailingMargin" id="1ll-7C-EGc"/>
+                <constraint firstAttribute="bottom" secondItem="tqh-bt-d9J" secondAttribute="bottom" constant="320" id="QGm-w1-s7J"/>
+                <constraint firstItem="tqh-bt-d9J" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="sgA-HV-C0U"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="520" y="-261"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bluekuang.png" width="301" height="87"/>
+    </resources>
+</document>

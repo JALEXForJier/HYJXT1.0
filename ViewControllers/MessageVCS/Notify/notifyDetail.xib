@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="notifyDetail">
+            <connections>
+                <outlet property="notifyDetailTitle" destination="RL4-5w-QUk" id="P7A-My-r8D"/>
+                <outlet property="notifyDetailView" destination="Gk1-vI-312" id="ULQ-gr-uPD"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gk1-vI-312">
+                    <rect key="frame" x="8" y="81" width="304" height="415"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RL4-5w-QUk">
+                    <rect key="frame" x="8" y="14" width="304" height="67"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="67" id="fJV-yg-28F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RL4-5w-QUk" firstAttribute="leading" secondItem="Gk1-vI-312" secondAttribute="leading" id="1K5-yr-U7E"/>
+                <constraint firstItem="Gk1-vI-312" firstAttribute="top" secondItem="RL4-5w-QUk" secondAttribute="bottom" id="8wD-vu-Abd"/>
+                <constraint firstItem="Gk1-vI-312" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailingMargin" id="NTV-Gf-aQA"/>
+                <constraint firstItem="RL4-5w-QUk" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leadingMargin" id="PQ1-pE-uI2"/>
+                <constraint firstItem="RL4-5w-QUk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="14" id="S1L-Bb-Nnt"/>
+                <constraint firstItem="RL4-5w-QUk" firstAttribute="trailing" secondItem="Gk1-vI-312" secondAttribute="trailing" id="XhC-Uc-7pi"/>
+                <constraint firstAttribute="bottom" secondItem="Gk1-vI-312" secondAttribute="bottom" constant="72" id="hJ2-cX-BVW"/>
+            </constraints>
+            <point key="canvasLocation" x="412" y="382"/>
+        </view>
+    </objects>
+</document>

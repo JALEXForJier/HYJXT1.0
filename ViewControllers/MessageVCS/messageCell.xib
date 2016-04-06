@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="88" id="KGk-i7-Jjw" customClass="messageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学校公告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRj-GU-ccO">
+                        <rect key="frame" x="8" y="8" width="158" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SCLOOL BULLETIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF1-Lz-u5j">
+                        <rect key="frame" x="8" y="32" width="81" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="ana-B3-H7B"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="7"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-qZ-YXJ">
+                        <rect key="frame" x="254" y="13" width="42" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="nla-0H-nbb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hRj-GU-ccO" firstAttribute="baseline" secondItem="1fh-qZ-YXJ" secondAttribute="firstBaseline" id="3s8-50-tpN"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="yF1-Lz-u5j" secondAttribute="bottom" constant="-11" id="8xo-lR-esY"/>
+                    <constraint firstItem="1fh-qZ-YXJ" firstAttribute="leading" secondItem="hRj-GU-ccO" secondAttribute="trailing" constant="88" id="AlS-nf-iAl"/>
+                    <constraint firstItem="1fh-qZ-YXJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="NNu-FU-42I"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="1fh-qZ-YXJ" secondAttribute="trailing" constant="16" id="Oil-Sz-gfv"/>
+                    <constraint firstItem="hRj-GU-ccO" firstAttribute="leading" secondItem="yF1-Lz-u5j" secondAttribute="leading" id="iIu-Zx-ht5"/>
+                    <constraint firstItem="hRj-GU-ccO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="lSV-c9-vB7"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1fh-qZ-YXJ" secondAttribute="bottom" constant="-5" id="pNb-0l-AFG"/>
+                    <constraint firstItem="hRj-GU-ccO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="qGU-gY-FvY"/>
+                    <constraint firstItem="yF1-Lz-u5j" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="24" id="yRQ-ak-XBf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="number" destination="1fh-qZ-YXJ" id="8ei-3D-3bz"/>
+                <outlet property="scloolBulletin" destination="yF1-Lz-u5j" id="ALW-0P-i6y"/>
+                <outlet property="scloolPublic" destination="hRj-GU-ccO" id="HNU-sg-Bau"/>
+            </connections>
+            <point key="canvasLocation" x="389" y="490.5"/>
+        </tableViewCell>
+    </objects>
+</document>

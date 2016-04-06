@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="recipeListCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="teacherHead.png" translatesAutoresizingMaskIntoConstraints="NO" id="odA-Iv-Jkk">
+                        <rect key="frame" x="8" y="0.0" width="84" height="70"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="青椒土豆丝" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ood-ot-ATX">
+                        <rect key="frame" x="8" y="71" width="84" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Fc9-xq-Nom"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="Ood-ot-ATX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="6uN-nP-No5"/>
+                <constraint firstItem="Ood-ot-ATX" firstAttribute="leading" secondItem="odA-Iv-Jkk" secondAttribute="leading" id="99u-K1-CEz"/>
+                <constraint firstItem="Ood-ot-ATX" firstAttribute="top" secondItem="odA-Iv-Jkk" secondAttribute="bottom" constant="1" id="E43-uz-Iud"/>
+                <constraint firstItem="Ood-ot-ATX" firstAttribute="bottom" secondItem="gTV-IL-0wX" secondAttribute="bottomMargin" id="Trc-Vl-bj2"/>
+                <constraint firstItem="odA-Iv-Jkk" firstAttribute="trailing" secondItem="gTV-IL-0wX" secondAttribute="trailingMargin" id="sFu-Md-Ee1"/>
+                <constraint firstItem="Ood-ot-ATX" firstAttribute="trailing" secondItem="odA-Iv-Jkk" secondAttribute="trailing" id="yGo-Pf-sRR"/>
+                <constraint firstItem="odA-Iv-Jkk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="zWp-hF-Xan"/>
+            </constraints>
+            <connections>
+                <outlet property="recipeName" destination="Ood-ot-ATX" id="A3S-Z0-LM6"/>
+                <outlet property="recipeimageView" destination="odA-Iv-Jkk" id="yKk-zX-HXE"/>
+            </connections>
+            <point key="canvasLocation" x="509" y="295"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="teacherHead.png" width="96" height="96"/>
+    </resources>
+</document>

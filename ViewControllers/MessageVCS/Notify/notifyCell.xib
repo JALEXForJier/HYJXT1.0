@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="122" id="KGk-i7-Jjw" customClass="notifyCell">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发布人体" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rl8-n8-Tsa">
+                        <rect key="frame" x="20" y="62" width="127" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="127" id="edB-2c-6rH"/>
+                            <constraint firstAttribute="height" constant="21" id="tOI-Fu-ncQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2010-01-01 12:12:12" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtE-RZ-el1">
+                        <rect key="frame" x="135" y="62" width="165" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="165" id="GSz-9i-VpA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="关于党的发展蓝图" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qr-4g-e3a">
+                        <rect key="frame" x="20" y="8" width="280" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rl8-n8-Tsa" firstAttribute="firstBaseline" secondItem="QtE-RZ-el1" secondAttribute="firstBaseline" id="315-cg-3Fs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="9Qr-4g-e3a" secondAttribute="trailing" constant="14" id="4Mp-Ly-cet"/>
+                    <constraint firstItem="9Qr-4g-e3a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="12" id="6Xf-2G-lod"/>
+                    <constraint firstItem="rl8-n8-Tsa" firstAttribute="top" secondItem="9Qr-4g-e3a" secondAttribute="bottom" constant="13" id="Bet-4N-MQz"/>
+                    <constraint firstItem="rl8-n8-Tsa" firstAttribute="baseline" secondItem="QtE-RZ-el1" secondAttribute="baseline" id="Omc-HY-zTI"/>
+                    <constraint firstItem="9Qr-4g-e3a" firstAttribute="trailing" secondItem="QtE-RZ-el1" secondAttribute="trailing" id="Pgh-eP-K4j"/>
+                    <constraint firstItem="rl8-n8-Tsa" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="ayd-XV-pjc"/>
+                    <constraint firstItem="9Qr-4g-e3a" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="bFl-8c-l2A"/>
+                    <constraint firstItem="rl8-n8-Tsa" firstAttribute="leading" secondItem="9Qr-4g-e3a" secondAttribute="leading" id="mf4-fN-g9Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="notifyPeople" destination="rl8-n8-Tsa" id="kZV-ii-nEN"/>
+                <outlet property="notifyTime" destination="QtE-RZ-el1" id="GLa-cQ-i0J"/>
+                <outlet property="notifyTitle" destination="9Qr-4g-e3a" id="YBS-QZ-ql6"/>
+            </connections>
+            <point key="canvasLocation" x="653" y="396"/>
+        </tableViewCell>
+    </objects>
+</document>
